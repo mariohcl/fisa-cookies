@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       FISA · Cookies
  * Description:       Aviso y gestión de consentimiento de cookies (Ley 21.719) con Google Consent Mode v2. Usa CookieConsent v3 de Orest Bida (MIT).
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            FISA
  * Text Domain:       fisa-cookies
  * Requires at least: 5.8
@@ -12,7 +12,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'FISA_COOKIES_VERSION', '1.0.1' );
+define( 'FISA_COOKIES_VERSION', '1.0.2' );
 define( 'FISA_COOKIES_FILE', __FILE__ );
 
 // Actualizaciones desde GitHub (se cargan siempre, aunque el aviso esté desactivado).
