@@ -1,0 +1,73 @@
+/* FISA · Cookies — ajustes visuales sobre CookieConsent v3.
+   Los colores --fisa-cc-primary / --fisa-cc-primary-text vienen desde Ajustes → Cookies. */
+
+#cc-main {
+	--cc-font-family: inherit;
+	--cc-modal-border-radius: 10px;
+	--cc-btn-border-radius: 6px;
+	--cc-modal-margin: 1rem;
+	--cc-z-index: 99999;
+
+	--cc-bg: #ffffff;
+	--cc-primary-color: #1f2937;
+	--cc-secondary-color: #4b5563;
+
+	--cc-btn-primary-bg: var(--fisa-cc-primary);
+	--cc-btn-primary-color: var(--fisa-cc-primary-text);
+	--cc-btn-primary-border-color: var(--fisa-cc-primary);
+	--cc-btn-primary-hover-bg: var(--fisa-cc-primary);
+	--cc-btn-primary-hover-color: var(--fisa-cc-primary-text);
+	--cc-btn-primary-hover-border-color: var(--fisa-cc-primary);
+
+	--cc-btn-secondary-bg: #f1f3f5;
+	--cc-btn-secondary-color: #1f2937;
+	--cc-btn-secondary-border-color: #f1f3f5;
+	--cc-btn-secondary-hover-bg: #e5e8eb;
+	--cc-btn-secondary-hover-color: #1f2937;
+	--cc-btn-secondary-hover-border-color: #e5e8eb;
+
+	--cc-toggle-on-bg: var(--fisa-cc-primary);
+	--cc-link-color: var(--fisa-cc-primary);
+	--cc-separator-border-color: #e9ecef;
+	--cc-cookie-category-block-bg: #f8f9fa;
+	--cc-cookie-category-block-border: #f1f3f5;
+	--cc-cookie-category-block-hover-bg: #f1f3f5;
+	--cc-cookie-category-block-hover-border: #e9ecef;
+	--cc-footer-bg: #f8f9fa;
+	--cc-footer-border-color: #e9ecef;
+	--cc-footer-color: #4b5563;
+}
+
+#cc-main {
+	font-family: inherit;
+}
+
+#cc-main .cm__title,
+#cc-main .pm__title {
+	font-size: 1.05rem;
+	font-weight: 600;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+#cc-main .cm__desc,
+#cc-main .pm__section-desc {
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+#cc-main .cm__btn,
+#cc-main .pm__btn {
+	font-weight: 500;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+#cc-main .cm__btn:hover,
+#cc-main .pm__btn:not(.pm__btn--secondary):hover {
+	filter: brightness(0.92);
+}
+
+#cc-main a {
+	text-decoration: underline;
+}
