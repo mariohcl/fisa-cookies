@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       FISA · Cookies
  * Description:       Aviso y gestión de consentimiento de cookies (Ley 21.719) con Google Consent Mode v2. Usa CookieConsent v3 de Orest Bida (MIT).
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            FISA
  * Text Domain:       fisa-cookies
  * Requires at least: 5.8
@@ -12,7 +12,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'FISA_COOKIES_VERSION', '1.0.2' );
+define( 'FISA_COOKIES_VERSION', '1.0.3' );
 define( 'FISA_COOKIES_FILE', __FILE__ );
 
 // Actualizaciones desde GitHub (se cargan siempre, aunque el aviso esté desactivado).
@@ -203,7 +203,7 @@ add_action( 'wp_enqueue_scripts', function () {
 	$tr   = fisa_cookies_texts( $lang );
 	unset( $tr['_link'] );
 
-	wp_enqueue_style( 'fisa-cookies-lib', FISA_COOKIES_URL . 'assets/vendor/cookieconsent/cookieconsent.css', array(), '3.3.0' );
+	wp_enqueue_style( 'fisa-cookies-lib', FISA_COOKIES_URL . 'assets/vendor/cookieconsent/cookieconsent.css', array(), '3.3.0-' . FISA_COOKIES_VERSION );
 	wp_enqueue_style( 'fisa-cookies', FISA_COOKIES_URL . 'assets/fisa-cookies.css', array( 'fisa-cookies-lib' ), FISA_COOKIES_VERSION );
 	wp_add_inline_style( 'fisa-cookies', sprintf(
 		'#cc-main{--fisa-cc-primary:%1$s;--fisa-cc-primary-text:%2$s;}',

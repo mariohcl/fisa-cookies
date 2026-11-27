@@ -85,13 +85,17 @@ inc/actualizaciones.php       Actualizaciones desde GitHub
 uninstall.php                 Borra las opciones al eliminar el plugin
 assets/fisa-cookies.js        Inicialización de CookieConsent
 assets/fisa-cookies.css       Estilos propios
-assets/vendor/cookieconsent/  CookieConsent v3.x (MIT)
+assets/icon/                  Ícono del plugin (SVG y PNG 128/256)
+assets/vendor/cookieconsent/  CookieConsent v3.x (MIT). Sus medidas en rem se pasaron a px (×16)
+                              para que no dependan del font-size del <html> de cada theme;
+                              repetir esa conversión si se actualiza la librería.
 ```
 
 ## Historial de versiones
 
 | Versión | Cambios |
 |---|---|
+| 1.0.3 | El aviso se ve igual en todos los sitios: los tamaños pasan de `rem` a `px`, así no lo achican los themes con `html { font-size: 10px }` (Expomin). Ícono del plugin en `assets/icon/`. |
 | 1.0.2 | Prueba del actualizador desde GitHub (sin cambios en el sitio). |
 | 1.0.1 | Actualizaciones desde GitHub (`inc/actualizaciones.php`). `FISA_COOKIES_DISABLE` ya no bloquea las actualizaciones. |
 | 1.0.0 | Primera versión. |

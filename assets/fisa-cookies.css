@@ -5,7 +5,7 @@
 	--cc-font-family: inherit;
 	--cc-modal-border-radius: 10px;
 	--cc-btn-border-radius: 6px;
-	--cc-modal-margin: 1rem;
+	--cc-modal-margin: 16px;
 	--cc-z-index: 99999;
 
 	--cc-bg: #ffffff;
@@ -44,7 +44,7 @@
 
 #cc-main .cm__title,
 #cc-main .pm__title {
-	font-size: 1.05rem;
+	font-size: 16.8px;
 	font-weight: 600;
 	letter-spacing: normal;
 	text-transform: none;
@@ -52,7 +52,7 @@
 
 #cc-main .cm__desc,
 #cc-main .pm__section-desc {
-	font-size: 0.9rem;
+	font-size: 14.4px;
 	line-height: 1.5;
 }
 

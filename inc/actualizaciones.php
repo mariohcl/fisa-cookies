@@ -30,6 +30,17 @@ function fisa_cookies_gh_package_url() {
 }
 
 /**
+ * Ícono del plugin (pantalla de Actualizaciones y aviso de actualización).
+ */
+function fisa_cookies_gh_icons() {
+	return array(
+		'1x'  => plugins_url( 'assets/icon/icon-128x128.png', FISA_COOKIES_FILE ),
+		'2x'  => plugins_url( 'assets/icon/icon-256x256.png', FISA_COOKIES_FILE ),
+		'svg' => plugins_url( 'assets/icon/icon.svg', FISA_COOKIES_FILE ),
+	);
+}
+
+/**
  * Versión publicada en GitHub (Version: del fisa-cookies.php de main).
  * Se guarda 3 horas; "Vuelve a comprobarlo" en Actualizaciones la vuelve a pedir.
  *
@@ -88,7 +99,7 @@ function fisa_cookies_gh_check_update( $transient ) {
 		'package'      => fisa_cookies_gh_package_url(),
 		'requires'     => '5.8',
 		'requires_php' => '7.4',
-		'icons'        => array(),
+		'icons'        => fisa_cookies_gh_icons(),
 		'banners'      => array(),
 	);
 
@@ -124,6 +135,7 @@ function fisa_cookies_gh_info( $result, $action, $args ) {
 		'requires'      => '5.8',
 		'requires_php'  => '7.4',
 		'download_link' => fisa_cookies_gh_package_url(),
+		'icons'         => fisa_cookies_gh_icons(),
 		'sections'      => array(
 			'description' => '<p>Aviso y gestión de consentimiento de cookies (Ley 21.719) con Google Consent Mode v2.</p>',
 			'changelog'   => '<p>Historial de versiones en el <a href="' . esc_url( $repo . '#historial-de-versiones' ) . '" target="_blank" rel="noopener">README del repositorio</a>.</p>',
